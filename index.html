@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">Professional Resume Builder By Jawad Shoukat</h1>
+        <p class="intro">Create a clean, detailed, and professional resume in a few easy steps.</p>
+        
+        <form id="resumeForm">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+            </fieldset>
+
+            <!-- Education -->
+            <fieldset>
+                <legend>Education</legend>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" placeholder="e.g.,, B.Sc. in Computer Science" required>
+
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" placeholder="e.g.,, University of XYZ" required>
+
+                <label for="graduation">Graduation Year:</label>
+                <input type="text" id="graduation" name="graduation" placeholder="e.g.,, 2024" required>
+            </fieldset>
+
+            <!-- Experience -->
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Describe your work experience, including roles, responsibilities, and accomplishments" required></textarea>
+            </fieldset>
+
+            <!-- Skills -->
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="List your key skills, such as JavaScript, Web Development, etc." required></textarea>
+            </fieldset>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+        <P>UPDATED RESUME BULDER</P>
+
+        <!-- Resume Output -->
+        <div id="resumeOutput" class="resume-output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
